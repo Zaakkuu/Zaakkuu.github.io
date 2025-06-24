@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes vs. Ids & Best practices</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+</head>
+<body class="mainContent">
+   <nav class="sideNav">
+    <div class="sideNavHeader">SPRINTS</div>
+    <ul class="sideNavList">
+        <li><a href="index.html">Home</a></li>
+      <li><a href="/blog/teHoutaewaTemplate.html">Sprint 1</a></li>
+      <li><a href="/blog/htmlcss.html">Sprint 2</a></li>
+      <li><a href="#sprint3">Sprint 3</a></li>
+      <div class="sideNavHeader">Human skills</div>
+      <li><a href="/blog/identityValues.html"> Sprint 1</a></li>
+      <li><a href="/blog/learningPlan.html"> Sprint 2</a></li>
+      <li><a href="#three"> Sprint 3</a></li>
+    </ul>
+  </nav>
+  <h1> Classes & Id's</h1>
+  <div></div>
+  <h2>Classes</h2>
+  <p class="text"> Classes are used to style any amount of elements throuhg css styling. You could style a button in one way and style the button next to it with a different idea.
+<br>
+For example, you can add a class to a button like this:
+<br>
+<code>&lt;button class="testButton"&gt;Click me&lt;/button&gt;</code>
+<br>
+Then in your CSS, you can style all elements with that class:
+<br>
+<code>(the following would be put in the css sheet) .testButton { background-color: blue; color: white; }</code>
+  </p>
+  <div> 
+  </div>
+  <div> 
+  </div>
+  <h3> ID's are used to identify an individual elements</h3>
+  <p class="text">For example the sidebar on my website COULD use id's but I prefer classes for this</p>
+  <div>
+    <code class="text"> &lt;nav id="main-nav"&gt; TextGoesHere&lt;/nav&gt; \
+        The css would look like this. #main-nav { background: #333; }
+    </code>
+  </div> 
+  <p class="text"> ID's do  communicate with javascript a bit faster though through the "getElementById"</p>
+
+  <h4>Pros and cons of each</h4>
+  <p class="standOut"> Classes</p>
+  <ul>
+    <li> ✓ Efficient for applying the same style to multiple elements</li>
+    <li> ✓ Better for styling</li>
+    <li> ✘ Get overidden by id's</li>
+    <li> ✘ Can get messy if you solely use classes</li>
+  </ul>
+  <p class="standOut"> ID's</p>
+  <ul> 
+    <li> ✓ usefull for identifying a stand-alone element you want to style</li>
+    <li> ✓ Selected by Javascript faster than classes</li>
+    <li> ✘ not reusable over pages</li>
+    <li> ✘ not an efficient use with css over classes usually</li>
+  </ul>
+</body>
+</html>
