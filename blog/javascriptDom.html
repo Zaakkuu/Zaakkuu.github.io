@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Blog</title>
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav class="sideNav">
+    <div class="sideNavHeader">SPRINTS</div>
+    <ul class="sideNavList">
+         <li><a href="../index.html">Home</a></li>
+      <li><a href="/blog/teHoutaewaTemplate.html">Sprint 1</a></li>
+      <li><a href="/blog/htmlcss.html">Sprint 2</a></li>
+      <li><a href="/blog/cafe.html">Sprint 3</a></li>
+      <div class="sideNavHeader">Human skills</div>
+      <li><a href="/blog/identityValues.html"> Sprint 1</a></li>
+      <li><a href="/blog/learningPlan.html"> Sprint 2</a></li>
+      <li><a href="/blog/javascriptDom.html"> Sprint 3</a></li>
+    </ul>
+</nav>
+  <main class="mainContent">
+    <p class="standOut"> An analogy to describe JavaScript and its relationship to HTML and CSS.</p>
+      <p class="text">In relation to my javascript tcg website I would think of <ul class="text"><li> Js as the games rules, what gives the cards the ability to do soemthing once played.</li> <li> Html is the card itself, like the text image and structure.</li><li> CSS is the card's design used to determine if its crazy shiny or not</li></ul></p>
+      <p class="standOut">Explain control flow and loops using an example process from everyday life?</p>
+      <p class="text">Control flow is how your code makes descisions, in javascript tcg website, when the fill roder button is pressed the script loops through the orders items and checks if theres any stock, then processes the order and takes payment. </p>
+<pre class="text"><code class="language-javascript">
+    &lt;pre&gt;&lt;code&gt;
+function fillOrder() {
+  let saleTotal = 0;
+  
+  // Loop through each item in the order
+  for (let i=0; i &lt;customer.order.length; i++) {
+    let productName = customer.order[i]
+    
+    // Check if we have stock
+    if (products[productName].stock &gt; 0) {
+      products[productName].stock--
+      saleTotal += products[productName].price
+    } else {
+      alert(&quot;We&apos;re sorry, scalpers have stolen all the &quot; + productName)
+    }
+  }
+  
+  cash += saleTotal
+  customer.order = []
+}
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+
+      <p class="standOut">Describe what the DOM is and an example of how you might interact with it.</p>
+      <p class="text">The DOM is how js interacts with your webpage without directly changing the html, i ues the DOM to, show product, display what a customer is ordering and add up cash totals </p>
+      <p class="standOut">Explain the difference between accessing data from arrays and objects.</p>
+      <p class="text">Arrays are a numbered (starting from 0) list of items, whilst objects are like labled boxes identified with id's</p>
+      <p class="standOut"> Explain what functions are and why they are helpful.</p>
+      <p class="text">Functions are the Javascript TCG employees, they handle preplanned tasks that can vary between each user experience. Some examples in my website would be the, generateCustomerOrder, fillOrder or displayProducts functions. They each play their own part in making the website have adaptive features with the DOM</p>
+  </main>
+  </body>
+</html>
