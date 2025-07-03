@@ -108,3 +108,9 @@ padding-top: 15vh;
 .shrine { 
   display: flex;
 }
+
+.clock{
+  width:100%;
+  min-height: 100vh;
+  position: relative;
+}
