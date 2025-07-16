@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #f8f1e5;
 }
 
+p {
+  
+}
 body {
   font-family: 'Marcellus', sans-serif;
-  background: #f8f1e5;
+  background: #262626;
   color: #4a4a4a;
   margin: right 300px;
   display: flex;
@@ -57,7 +61,7 @@ body {
   padding: 20px;
   font-size: 25px;
   flex-grow: 1;
-padding-top: 15vh;
+padding-top: 50px;
 }
 .filler {
     color: #f8f1e5;
@@ -96,7 +100,7 @@ padding-top: 15vh;
 }
 .text{
     font-family: "Marcellus";
-    font-size: 14px;
+    font-size: 14px;;
 }   
 .standOut{
     font-family: "Marcellus";
@@ -113,4 +117,92 @@ padding-top: 15vh;
   width:100%;
   min-height: 100vh;
   position: relative;
+}
+
+.standHeader{
+  font-family: "Marcellus", serif;
+  font-size: 45px;
+  color: #f8f1e5;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+ .standHeader::first-letter {
+    font-size: 3em;
+    font-weight: bold;
+    color: #e65032;
+    font-family: cursive;
+    float: left;
+		margin-right: .125em;
+  }
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-icon {
+  font-size: 0.8em;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-left: 15px;
+}
+
+.dropdown.active .dropdown-content {
+  max-height: 500px;
+}
+
+.dropdown.active .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+.stolenHover {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-family: 'Gambetta', serif;
+  letter-spacing: -3px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: #ff5e00;
+  outline: none;
+  text-align: center;
+}
+
+.stolenHover:hover {
+  font-variation-settings: "wght" 582; 
+  letter-spacing: 1px;
+}
+.hoverText {
+width: 100%;
+  height: 26vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+  table, td {
+  border:1px solid #E2725B;
+}
+th {
+    border:1px solid #B7410E;
+}
+.centerMedium{
+  font-size: 35px;
+  font-family: 'Marcellus', serif;
+  color: #f8f1e5;
+   display: inline-block;
+}
+.centeredDiv {
+  text-align: center;
 }

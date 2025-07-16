@@ -1,0 +1,4 @@
+# _config.yml
+title: devAcadBlog
+include: [_includes]  # Allows includes
+keep_files: [styles, scripts, blog, images]  # Preserve folders
