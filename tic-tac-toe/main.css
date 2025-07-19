@@ -1,0 +1,77 @@
+/* Game board and text not responsive yet*/
+
+body {
+  background-color:#262626;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 40px;
+  }
+  
+table {
+    margin-right: center;
+    margin-left: center;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2vw;
+    color: #f8f1e5;
+  }
+  
+td {
+    width: 8vw;
+    height: 8vw;
+    text-align: center;
+    font-size: 300%;
+    border: black solid 3px;
+    color: #f8f1e5;
+  }
+
+h2 {
+  text-align: center;
+  font-size: 2vw;
+  color: #e66d0a;
+}  
+.sideNav {
+  height: 100vh;
+  width: 160px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #6b8e23;
+  overflow-x: hidden;
+  padding-top: 20px;
+  border-right: 2px solid #556b2f;
+}
+
+.sideNavHeader {    
+  padding: 6px 8px 6px 16px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  color: #f8f1e5;
+  border-bottom: 1px solid #556b2f;
+  margin-bottom: 20px;
+}
+
+.sideNavList {
+  list-style: none;
+}
+
+.sideNavList li a {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #f8f1e5;
+  display: block;
+  transition: 0.3s;
+}
+
+.sideNavList li a:hover {
+  background-color: #556b2f;
+}
