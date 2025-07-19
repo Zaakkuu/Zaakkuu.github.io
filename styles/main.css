@@ -1,3 +1,41 @@
+/*colour pallette 
+    Cream #F8F1E5
+
+    Light Gray-Beige #F0ECE2
+
+    Charcoal #4A4A4A
+
+    Almost Black #2D2D2D
+
+    Warm Beige #E8D9C5
+
+    Soft Sage #D1D9C7
+
+    Pale Blue-Gray #E6EBF0
+
+    Slate Light #D9E0E6
+
+    True White #FFFFFF
+
+    Soft White #FAFAFA
+
+    Olive Drab #6B8E23
+
+    Dark Olive #556B2F
+
+    Cream #F8F1E5
+
+    Charcoal #4A4A4A
+
+    Terra Cotta #E2725B
+
+    Vermilion #E65032
+
+    Bright Orange #FF5E00
+
+    MAIN BACKGROUND #262626
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +43,6 @@
   color: #f8f1e5;
 }
 
-p {
-  
-}
 body {
   font-family: 'Marcellus', sans-serif;
   background: #262626;
@@ -18,6 +53,7 @@ body {
   min-height: 100vh;
 }
 
+/* SIDE NAV */
 .sideNav {
   height: 100vh;
   width: 160px;
